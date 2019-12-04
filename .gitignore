@@ -36,3 +36,6 @@ release.properties
 mvnw
 mvnw.cmd
 .mvn/
+
+# Java
+src/main/resources/META-INF/

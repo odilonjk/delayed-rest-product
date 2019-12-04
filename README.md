@@ -11,7 +11,7 @@ This project can be run on Docker containers as many as needed easily.
 
 ### This project uses
 
-* JDK 13
+* JDK 8
 * Quarkus 1.0
 * Maven 3.6
 

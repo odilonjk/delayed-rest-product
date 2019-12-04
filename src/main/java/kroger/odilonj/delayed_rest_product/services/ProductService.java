@@ -10,12 +10,12 @@ import java.util.concurrent.TimeUnit;
 public class ProductService {
 
     public Product getProduct(String name) {
-        var price = getPrice();
+        double price = getPrice();
         return new Product(name, price);
     }
 
     private double getPrice() {
-        var priceNotFormated = Math.random() * (99.99 - 0.01) + 0.01;
+        double priceNotFormated = Math.random() * (99.99 - 0.01) + 0.01;
         return Math.round(priceNotFormated*100)/100.0;
     }
 

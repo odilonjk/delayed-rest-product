@@ -4,10 +4,13 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>kroger.odilonj</groupId>
   <artifactId>delayed-rest-product</artifactId>
-  <version>1.0</version>
+  <version>1.0.1</version>
   <properties>
-    <maven.compiler.source>13</maven.compiler.source>
-    <maven.compiler.target>13</maven.compiler.target>
+
+    <!-- https://github.com/quarkusio/quarkus/issues/5691 -->
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <quarkus-plugin.version>1.0.1.Final</quarkus-plugin.version>
     <quarkus.platform.artifact-id>quarkus-universe-bom</quarkus.platform.artifact-id>
@@ -80,6 +83,7 @@
       </plugin>
     </plugins>
   </build>
+
   <profiles>
     <profile>
       <id>native</id>
