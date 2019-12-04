@@ -1,5 +1,8 @@
 package kroger.odilonj.delayed_rest_product.entities;
 
+import io.quarkus.runtime.annotations.RegisterForReflection;
+
+@RegisterForReflection
 public final class Product {
 
     private String name;
